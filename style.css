@@ -10,7 +10,50 @@ body{
   pointer-events: none; 
   z-index: 0; 
 }
-card{
-    position: relative;
-    z-index: 1;
-}
+#welcomeCard {
+      position: fixed;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+      width: 80%;
+      max-width: 600px;
+      background-color: #ffe5e5;
+      padding: 2rem;
+      text-align: center;
+      box-shadow: 0 5px 20px rgba(0,0,0,0.3);
+      z-index: 1;
+      border-radius: 10px;
+    }
+
+    /* Signature */
+    #signature {
+      display: block;
+      text-align: right;
+      margin-top: 2rem;
+      font-style: italic;
+      font-weight: 500;
+    }
+
+    /* Hidden page content behind */
+    #mainContent {
+      display: none; /* hidden initially */
+      margin-top: 5rem;
+    }
+
+    /* The 4 cards container */
+    .card-container {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+      gap: 2rem;
+      padding: 2rem;
+    }
+
+    .card-container .card {
+      width: 250px;
+      text-align: center;
+      padding: 1rem;
+      box-shadow: 0 4px 10px rgba(0,0,0,0.2);
+      border-radius: 10px;
+      background-color: #fff0f5;
+    }
