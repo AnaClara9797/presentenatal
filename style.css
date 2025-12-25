@@ -29,6 +29,7 @@ body{
   display: flex;
   flex-direction: column;
   justify-content: center;
+  transition: opacity 0.8s ease, transform 0.8s ease;
 
   font-family: 'Arial', sans-serif;
     }
