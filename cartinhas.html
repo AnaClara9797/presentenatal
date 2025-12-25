@@ -12,7 +12,17 @@
 </head>
 <body>
   <canvas id="snow"></canvas>
-  <h2>Album</h2>
+  <div class="cards-container">
+  <div class="card" onclick="openCard(this)">
+    <div class="front">🎄 Carta 1</div>
+    <div class="back">Queridos pais, eu amo vocês e sou muito grata por tudo! 🎁</div>
+  </div>
+
+  <div class="card" onclick="openCard(this)">
+    <div class="front">🎄 Carta 2</div>
+    <div class="back">Vocês são os melhores, obrigado por todo amor e cuidado. ❤️</div>
+  </div>
+</div>
   
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
     
@@ -73,6 +83,10 @@ function moveFlakes() {
 }
 
 draw();
+
+function openCard(card) {
+  card.classList.toggle('flipped');
+}
 
 </script>
 </body>
