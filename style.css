@@ -256,7 +256,7 @@ body {
   position: absolute;
   top: 20px;   /* distância do topo */
   right: 20px; /* distância da direita */
-  padding: 20px 40px;
+  padding: 10px 20px;
   font-size: 2rem;
   background-color: #4CAF50;
   color: white;
@@ -266,11 +266,13 @@ body {
 }
 
 .cards-container {
+  position: absolute;      /* sobre o canvas */
+  top: 50%;                /* centraliza verticalmente */
+  left: 50%;               /* centraliza horizontalmente */
+  transform: translate(-50%, -50%);
   display: flex;
   gap: 40px;
-  justify-content: center;
-  align-items: center;
-  margin-top: 100px; /* ajusta a posição no body */
+  z-index: 10;             /* fica acima do canvas da neve */
 }
 
 .card {
