@@ -15,7 +15,7 @@
   <div class="tree-container">
   <div class="tree"></div>
 
-  <div class="ornament" style="top: 150px; left: 800px;" data-passage="John 3:16"></div>
+  <div class="ornament" style="top: 150px; left: 800px;" data-title="John 3:16" data-passage="For God so loved the world..."></div>
   <div class="ornament" style="top: 300px; left: 850px;" data-passage="Psalm 23:1"></div>
   <div class="ornament" style="top: 450px; left: 750px;" data-passage="Luke 2:11"></div>
   <div class="ornament" style="top: 550px; left: 870px;" data-passage="Romans 12:12"></div>
@@ -85,17 +85,18 @@ function moveFlakes() {
 
 draw();
 
+const passageBox = document.getElementById('passageBox');
 const ornaments = document.querySelectorAll('.ornament');
 
 ornaments.forEach(ornament => {
+  ornament.textContent = ornament.dataset.title; // shows reference
   ornament.addEventListener('mouseenter', () => {
-    ornament.textContent = ornament.dataset.passage;
+    passageBox.textContent = ornament.dataset.passage;
   });
   ornament.addEventListener('mouseleave', () => {
-    ornament.textContent = '';
+    passageBox.textContent = '';
   });
 });
-
 
 </script>
 </body>
