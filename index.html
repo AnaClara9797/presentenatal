@@ -89,19 +89,18 @@ function moveFlakes() {
 
 draw();
 
-const showBtn = document.getElementById("showPageBtn");
+  const showBtn = document.getElementById("showPageBtn");
   const welcomeCard = document.getElementById("welcomeCard");
   const mainContent = document.getElementById("mainContent");
 
   showBtn.addEventListener("click", () => {
-    // fade out + slight zoom
     welcomeCard.style.opacity = "0";
     welcomeCard.style.transform = "translate(-50%, -50%) scale(0.95)";
 
     setTimeout(() => {
       welcomeCard.style.display = "none";
       mainContent.style.display = "block";
-    }, 800); // same time as CSS transition
+    }, 800);
   });
 </script>
 </body>

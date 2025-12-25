@@ -1,20 +1,26 @@
-body{
-    background-color: lightcyan;
+body {
+  background-color: lightcyan;
+  margin: 0;
+  font-family: Arial, sans-serif;
 }
+
+/* Snow canvas */
 #snow {
   position: fixed;
   top: 0;
   left: 0;
   width: 100%;
   height: 100%;
-  pointer-events: none; 
-  z-index: 0; 
+  pointer-events: none;
+  z-index: 0;
 }
+
+/* Welcome overlay card */
 #welcomeCard {
   position: fixed;
   top: 50%;
   left: 50%;
-  transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%) scale(1);
   width: 90%;
   max-width: 1000px;
   min-height: 70vh;
@@ -22,19 +28,20 @@ body{
   background-color: #ffe5e5;
   padding: 6rem;
   text-align: center;
-  box-shadow: 0 5px 20px rgba(0,0,0,0.3);
+  box-shadow: 0 10px 25px rgba(0,0,0,0.3);
   border-radius: 20px;
   z-index: 2;
 
   display: flex;
   flex-direction: column;
   justify-content: center;
+
+  opacity: 1;
   transition: opacity 0.8s ease, transform 0.8s ease;
+}
 
-  font-family: 'Arial', sans-serif;
-    }
-
-    #welcomeCard h2 {
+/* Text sizing */
+#welcomeCard h2 {
   font-size: 4.5rem;
 }
 
@@ -42,25 +49,31 @@ body{
   font-size: 2.2rem;
 }
 
-    #signature {
-      display: block;
-      text-align: right;
-      margin-top: 2rem;
-      font-style: italic;
-      font-weight: 500;
-      font-size: 2.2rem;
-    }
-
-    #showPageBtn {
-  font-size: 1.8rem;
-  padding: 1rem 1rem;;
+/* Signature */
+#signature {
+  display: block;
+  text-align: right;
+  margin-top: 3rem;
+  font-style: italic;
+  font-size: 1.5rem;
 }
 
+/* Button */
+#showPageBtn {
+  font-size: 1.8rem;
+  padding: 1rem 2.5rem;
+  margin-top: 2rem;
+}
+
+/* Main content (hidden at start) */
 #mainContent {
   display: none;
-  margin: 5rem 1rem 2rem 1rem;
+  position: relative;
+  z-index: 1;
+  padding: 4rem 2rem;
 }
 
+/* Cards behind */
 .card-container {
   display: flex;
   flex-wrap: wrap;
@@ -69,14 +82,13 @@ body{
 }
 
 .card-container .card {
-  width: 250px;
-  min-height: 150px;
-  text-align: center;
+  width: 260px;
+  min-height: 160px;
   padding: 1.5rem;
-  box-shadow: 0 6px 15px rgba(0,0,0,0.2);
   border-radius: 15px;
   background-color: #fff0f5;
-  transition: transform 0.3s, box-shadow 0.3s;
+  box-shadow: 0 6px 15px rgba(0,0,0,0.2);
+  text-align: center;
 }
 
 .card-container .card:hover {
