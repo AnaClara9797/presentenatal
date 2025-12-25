@@ -229,7 +229,29 @@ body {
   font-size: 1.2rem;
   box-shadow: 0 5px 15px rgba(0,0,0,0.2);
 }
+.star {
+  width: 0;
+  height: 0;
+  border-left: 25px solid transparent;
+  border-right: 25px solid transparent;
+  border-bottom: 50px solid gold;
+  position: absolute;
+  top: 0; /* no topo da árvore */
+  left: 50%; /* centraliza horizontalmente */
+  transform: translateX(-50%);
+}
 
+.star::after {
+  content: '';
+  position: absolute;
+  top: 15px;
+  left: -25px;
+  width: 0;
+  height: 0;
+  border-left: 25px solid transparent;
+  border-right: 25px solid transparent;
+  border-top: 50px solid gold;
+}
   .voltar-btn {
   position: absolute;
   top: 20px;   /* distância do topo */
@@ -241,3 +263,4 @@ body {
   border-radius: 5px;
   cursor: pointer;
 }
+
