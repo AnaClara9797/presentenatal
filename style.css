@@ -176,17 +176,20 @@ body {
   display: flex;
   justify-content: center;
   align-items: center;
+  flex-direction: column;
 }
 
+/* Triangle tree */
 .tree {
   width: 0;
   height: 0;
   border-left: 150px solid transparent;
   border-right: 150px solid transparent;
-  border-bottom: 300px solid #2e8b57; /* tree color */
+  border-bottom: 300px solid #2e8b57;
   position: relative;
 }
 
+/* Ornaments */
 .ornament {
   position: absolute;
   width: 40px;
@@ -202,7 +205,13 @@ body {
   transition: transform 0.3s ease, font-size 0.3s ease;
 }
 
+/* Hover effect */
 .ornament:hover {
-  transform: scale(2);       /* grows bigger */
-  font-size: 1rem;           /* shows the passage */
+  transform: scale(2);
+  font-size: 1rem;
+  text-align: center;
+  padding: 0.5rem;
+  width: 80px;
+  height: 80px;
+  border-radius: 50%;
 }
