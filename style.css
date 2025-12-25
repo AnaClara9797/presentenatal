@@ -183,9 +183,9 @@ body {
 .tree {
   width: 0;
   height: 0;
-  border-left: 500px solid transparent;   /* wider triangle */
-  border-right: 500px solid transparent;  /* wider triangle */
-  border-bottom: 800px solid #2e8b57;    /* taller triangle */
+  border-left: 450px solid transparent;   /* wider triangle */
+  border-right: 450px solid transparent;  /* wider triangle */
+  border-bottom: 1000px solid #2e8b57;    /* taller triangle */
   position: relative;
 }
 
