@@ -302,11 +302,14 @@ body {
 .card .front {
   background-color: #ff5555;
   color: white;
+  font-family: 'Great Vibes', cursive;
+  font-size: 3rem; 
+
 }
 
 .card .back {
   font-family: 'Great Vibes', cursive;
-  font-size: 1.5rem; /* você pode ajustar o tamanho */
+  font-size: 1.5rem; 
   text-align: center;
   background-color: #f8f6df;
   color: black;
