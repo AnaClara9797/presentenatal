@@ -71,34 +71,60 @@ body {
   position: relative;
   z-index: 1;
   padding: 4rem 2rem;
+  padding-top: 20vh; 
 }
 
 /* Container that centers the cards */
-.cards-container {
-  min-height: 100vh;              /* full screen height */
+.card-container {
+  min-height: 100vh;              
   display: flex;
-  justify-content: center;        /* horizontal center */
-  align-items: center;            /* vertical center */
-  gap: 2rem;                      /* space between cards */
+  justify-content: center;        
+  align-items: center;            
+  gap: 2rem;                      
+  flex-wrap: wrap;                 /* wrap cards on smaller screens */
 }
 
-/* Individual cards */
-.card {
+/* Each card + title wrapper */
+.card-item {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+/* The actual visual card */
+.card-box {
   width: 280px;
   padding: 2rem;
-  background-color: #fff;
+  background-color: #4b7f53;
   border-radius: 15px;
   box-shadow: 0 5px 20px rgba(0,0,0,0.2);
   text-align: center;
   font-family: Arial, sans-serif;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
 }
 
-/* Hide/show logic */
-.hidden {
-  display: none;
+/* Title under card */
+.card-title {
+  margin-top: 1rem;
+  font-size: 1.3rem;
+  font-weight: 600;
+  text-align: center;
 }
 
-.card-container .card:hover {
+/* Hover effect on the card-box only */
+.card-box:hover {
   transform: translateY(-5px);
   box-shadow: 0 10px 20px rgba(0,0,0,0.3);
+}
+
+/* Responsive mobile layout */
+@media (max-width: 900px) {
+  .card-container {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .card-box {
+    width: 85%;
+  }
 }
