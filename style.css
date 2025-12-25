@@ -229,10 +229,15 @@ body {
   font-size: 1.2rem;
   box-shadow: 0 5px 15px rgba(0,0,0,0.2);
 }
-#botao-voltar{
-  padding:10px 20px; 
-  background-color:#4CAF50; 
-  color:white; border:none; 
-  border-radius:5px; 
-  cursor:pointer;
+
+  .voltar-btn {
+  position: absolute;
+  top: 20px;   /* distância do topo */
+  right: 20px; /* distância da direita */
+  padding: 10px 20px;
+  background-color: #4CAF50;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
 }
