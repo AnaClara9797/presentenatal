@@ -88,6 +88,15 @@ function moveFlakes() {
 }
 
 draw();
+
+const showBtn = document.getElementById("showPageBtn");
+  const welcomeCard = document.getElementById("welcomeCard");
+  const mainContent = document.getElementById("mainContent");
+
+  showBtn.addEventListener("click", () => {
+    welcomeCard.style.display = "none";
+    mainContent.style.display = "block";
+  });
 </script>
 </body>
 </html>
