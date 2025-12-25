@@ -71,17 +71,20 @@ body {
   position: relative;
   z-index: 1;
   padding: 4rem 2rem;
-  padding-top: 20vh; 
+  min-height: 100vh;          /* full screen height */
+  display: flex;
+  justify-content: center;     /* horizontal center */
+  align-items: flex-start; 
 }
 
 /* Container that centers the cards */
 .card-container {
-  min-height: 100vh;              
   display: flex;
-  justify-content: center;        
-  align-items: center;            
-  gap: 2rem;                      
-  flex-wrap: wrap;                 /* wrap cards on smaller screens */
+  justify-content: center;
+  align-items: flex-start;    /* stack starts lower */
+  gap: 2rem;
+  flex-wrap: wrap;
+  margin-top: 10vh;                  /* wrap cards on smaller screens */
 }
 
 /* Each card + title wrapper */
@@ -94,6 +97,7 @@ body {
 /* The actual visual card */
 .card-box {
   width: 280px;
+  height: 180px;
   padding: 2rem;
   background-color: #4b7f53;
   border-radius: 15px;
