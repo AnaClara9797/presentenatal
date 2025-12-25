@@ -58,6 +58,7 @@ body {
   margin-top: 3rem;
   font-style: italic;
   font-size: 1.5rem;
+  color:white;
 }
 
 /* Button */
@@ -94,7 +95,11 @@ body {
   display: flex;
   flex-direction: column;
   align-items: center;
+}
+
+.card-item a {
   text-decoration: none;
+  color: inherit;
 }
 
 /* The actual visual card */
