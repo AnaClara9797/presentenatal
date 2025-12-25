@@ -185,7 +185,7 @@ body {
   height: 0;
   border-left: 450px solid transparent;   /* wider triangle */
   border-right: 450px solid transparent;  /* wider triangle */
-  border-bottom: 1150px solid #2e8b57;    /* taller triangle */
+  border-bottom: 900px solid #2e8b57;    /* taller triangle */
   position: relative;
 }
 
