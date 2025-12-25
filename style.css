@@ -12,11 +12,11 @@ body{
 }
 #welcomeCard {
       position: fixed;
-      top: 50%;
-      left: 50%;
+      top: 25%;
+      left: 25%;
       transform: translate(-50%, -50%);
-      width: 80%;
-      max-width: 600px;
+      width: 90%;
+      max-width: 800px;
       background-color: #ffe5e5;
       padding: 2rem;
       text-align: center;
@@ -27,7 +27,6 @@ body{
       font-family: 'Arial', sans-serif;
     }
 
-    /* Signature */
     #signature {
       display: block;
       text-align: right;
