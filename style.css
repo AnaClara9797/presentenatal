@@ -78,12 +78,13 @@ body {
 
 /* Container that centers the cards */
 .card-container {
-   display: flex;
-  justify-content: center;  /* horizontal center */
-  align-items: flex-start;  /* start lower, you control with margin-top */
-  gap: 2rem;
-  flex-wrap: wrap;
-  margin-top: 20vh;                  /* wrap cards on smaller screens */
+  display: flex;               /* arrange children in a row */
+  justify-content: center;     /* center horizontally */
+  align-items: flex-start;     /* start from top, can use center for vertical */
+  gap: 2rem;                   /* space between cards */
+  flex-wrap: nowrap;            /* don’t wrap into column */
+  margin-top: 20vh;            /* move the row down a bit */
+  width: 100%;                    /* wrap cards on smaller screens */
 }
 
 /* Each card + title wrapper */
@@ -97,14 +98,14 @@ body {
 .card-box {
   width: 280px;
   height: 180px;
-  padding: 2rem;
-  background-color: #4b7f53;
+  background-color: #4b7f53;  /* green */
   border-radius: 15px;
   box-shadow: 0 5px 20px rgba(0,0,0,0.2);
-  text-align: center;
+  display: flex;               /* center content */
+  justify-content: center;
+  align-items: center;
+  color: white;                /* so text/emoji is visible */
   font-size: 4rem;
-  font-family: Arial, sans-serif;
-  transition: transform 0.3s ease, box-shadow 0.3s ease;
 }
 
 /* Title under card */
