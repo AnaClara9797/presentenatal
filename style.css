@@ -73,22 +73,29 @@ body {
   padding: 4rem 2rem;
 }
 
-/* Cards behind */
-.card-container {
+/* Container that centers the cards */
+.cards-container {
+  min-height: 100vh;              /* full screen height */
   display: flex;
-  flex-wrap: wrap;
-  justify-content: center;
-  gap: 2rem;
+  justify-content: center;        /* horizontal center */
+  align-items: center;            /* vertical center */
+  gap: 2rem;                      /* space between cards */
 }
 
-.card-container .card {
-  width: 260px;
-  min-height: 160px;
-  padding: 1.5rem;
+/* Individual cards */
+.card {
+  width: 280px;
+  padding: 2rem;
+  background-color: #fff;
   border-radius: 15px;
-  background-color: #fff0f5;
-  box-shadow: 0 6px 15px rgba(0,0,0,0.2);
+  box-shadow: 0 5px 20px rgba(0,0,0,0.2);
   text-align: center;
+  font-family: Arial, sans-serif;
+}
+
+/* Hide/show logic */
+.hidden {
+  display: none;
 }
 
 .card-container .card:hover {
