@@ -305,7 +305,7 @@ body {
 }
 
 .card .back {
-  background-color: #ffeb3b;
+  background-color: #f8f6df;
   color: black;
   transform: rotateY(180deg);
 }
